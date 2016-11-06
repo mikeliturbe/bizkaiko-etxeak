@@ -1,0 +1,39 @@
+<html>  
+  <head>
+    <title>Bizkaiko etxeak</title>
+
+    <script src='./mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v2.4.0/mapbox.css' rel='stylesheet' />
+
+    <style>
+      #map {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+      var map = L.mapbox.map('map').setView([39.45,4.5], 12);
+      L.tileLayer('http://bizkaikoetxeak.iturbe.info/bizkaiko-etxeak/{z}/{x}/{y}.png').addTo(map);
+    map.options.maxZoom = 17;
+    map.options.minZoom = 11;
+    map.options.maxBounds =  L.latLngBounds(L.latLng(39.2477,4.1549), L.latLng(39.6327,4.9281))
+    var legend = L.control({position: 'bottomleft'});
+
+    legend.onAdd = function (map) {
+    var div = L.DomUtil.create('div', 'info legend');
+
+        div.innerHTML +=
+        '<img src="legend.png" alt="legend" width="148" height="282">';
+
+    return div;
+    };
+
+    legend.addTo(map);
+    </script>
+
+  </body>
+</html>  
