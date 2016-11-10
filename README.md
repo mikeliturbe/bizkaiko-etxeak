@@ -42,6 +42,7 @@ $ cp all_buildings* ~/Documents/Mapbox/project/bizkaiko-etxeak/layers/allbuildin
 $ cp all_boundaries* ~/Documents/Mapbox/project/bizkaiko-etxeak/layers/allboundaries/
 ```
 - Open Tilemill and the project should appear there.
+- By using [CartoCSS](https://tilemill-project.github.io/tilemill/docs/manual/carto/) you can customize the appearance of the map. For this map, the color of building shapes were chosen according to their construction date. Colors were chosen using [ColorBrewer](http://colorbrewer2.org/).
 
 ### Map deployment
 
