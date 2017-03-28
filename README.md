@@ -4,7 +4,7 @@
 
 Bizkaiko etxeak is an interactive web map where the houses of [Biscay](https://en.wikipedia.org/wiki/Biscay) (Basque Country) are depicted based on their construction date. The map data was taken from the [website of the cadastre of Biscay](http://www.bizkaia.eus/home2/Temas/DetalleTema.asp?Tem_Codigo=5181&Idioma=IN). Although the data is open access, its property and reusing rights are not, so there is no data in the repository, only the necessary code and instructions to create the map itself. That's why some directories only have gitignore files: to preserve directory structure while ignoring protected data.
 
-**[Live map](http://bizkaikoetxeak.iturbe.info)**
+**[Live map](https://mikeliturbe.github.io/bizkaiko-etxeak/)**
 
 ![The map](images/BizkaikoEtxeak.png)
 
