@@ -17,7 +17,7 @@
     <script>
 
       var map = L.mapbox.map('map').setView([39.45,4.5], 12);
-      L.tileLayer('http://mikeliturbe.github.io/bizkaiko-etxeak/tiles/{z}/{x}/{y}.png').addTo(map);
+      L.tileLayer('./tiles/{z}/{x}/{y}.png').addTo(map);
     map.options.maxZoom = 17;
     map.options.minZoom = 11;
     map.options.maxBounds =  L.latLngBounds(L.latLng(39.2477,4.1549), L.latLng(39.6327,4.9281))
